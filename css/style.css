@@ -4,7 +4,6 @@
 /* COMMON */
 body {
     font-family: Arial, sans-serif;
-    background-color: lightblue;
 }
 img {
     width: 100%;
@@ -18,9 +17,6 @@ ul {
 a {
     color: inherit;
     text-decoration: none;
-}
-.ms_btn {
-    border-radius: 2rem;
 }
 
 /* COMMON - Card */
@@ -50,6 +46,22 @@ a {
     font-weight: 600;
 }
 
+/* COMMON - Section Grid */
+.ms_section_grid {
+    padding: 1.5rem 0;
+}
+.ms_section_grid .col .ms_card {
+    margin: 0.8rem 0.3rem;
+}
+.ms_section_grid .col .ms_card img {
+    border-radius: 1rem;
+}
+.ms_section_grid .col .ms_card h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0 2rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
 
 /* HEADER */
 header {
@@ -101,8 +113,7 @@ header {
 #header-bottom .main-menu,
 #header-bottom .search-menu {
     display: none;
-}    
-
+} 
 
 /* MAIN */
 main {
@@ -116,19 +127,31 @@ main {
     align-items: flex-end;
 }
 
-
 /* Jumbotron */
 #ms_jumbotron {
     background-image: url(../img/jumbo-bg.png);
     height: 675px;
 }
 
+/* SECTION - Carousel */
+
 /* SECTION - It takes two */
 #it-takes-two {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
 
-
+/* SECTION - New Releases */
+#new-releases {
+    background-color: #1f1f1f;
+    color: white;
+}
+#new-releases h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#new-releases h3 {
+    font-size: 1.5rem;
+}
 
 
 /* FOOTER */
