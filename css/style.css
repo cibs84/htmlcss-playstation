@@ -2,12 +2,133 @@
 
 
 /* COMMON */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+}
+img {
+    width: 100%;
+    display: inline-block;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.ms_btn {
+    border-radius: 2rem;
+}
+
+/* COMMON - Card */
+.card {
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+.card .card-img-top {
+    width: 60%;
+}
+.card .card-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+.card .card-body {
+    padding: 0;
+}
+.card .card-body .card-text {
+    margin-top: 1rem;
+}
+.card .card-body .btn {
+    background-color: #cd3d0f;
+    border-radius: 1.5rem;
+    font-weight: 600;
+}
 
 
 /* HEADER */
+header {
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: 600;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+#header-top,
+#header-bottom {
+    padding: 0.4rem 0.6rem;
+}
+
+/* Header-Top */
+#header-top {
+    background: black;
+    text-align: right;
+}
+#header-top img {
+    width: 5rem;
+}
+
+/* Header-Bottom */
+#header-bottom {
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+#header-bottom .logo {
+    margin-right: 1rem;
+    flex-grow: 1;
+}
+#header-bottom .logo img {
+    width: 3rem;
+}
+
+/* Header-Bottom - Burger Menu */
+#header-bottom .burger-menu a {
+    font-size: 1.5rem;
+    padding: 0.3rem 1rem;
+    border: 1px solid lightgrey;
+    border-radius: 0.3rem;
+}
+
+/* Header-Bottom - Main Menu / Search Menu */
+#header-bottom .main-menu,
+#header-bottom .search-menu {
+    display: none;
+}    
 
 
 /* MAIN */
+main {
+    padding-top: 6rem;
+}
+.ms_section_hero {
+    padding: 3rem 0;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/* Jumbotron */
+#ms_jumbotron {
+    background-image: url(../img/jumbo-bg.png);
+    height: 675px;
+}
+
+/* SECTION - It takes two */
+#it-takes-two {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+
 
 
 /* FOOTER */
@@ -34,10 +155,54 @@
 /******** Large - ≥992px ********/
 @media screen and (min-width: 992px) {
 
+/* Header-Bottom */
+#header-bottom .logo {
+    flex-grow: 0;
+}
+#header-bottom li {
+    display: inline-block;
+    margin-right: 1.5rem;
+}        
+#header-bottom li a img {
+    width: 0.6rem;
+    margin-left: 0.2rem;
+}        
+
+/* Header-Bottom - Burger Menu */
+#header-bottom .burger-menu a {
+    display: none;
+}
+
+/* Header-Bottom - Main Menu / Search Menu */
+#header-bottom .main-menu,
+#header-bottom .search-menu {
+    display: inline-block;
+}    
+
+/* Header-Bottom - Main Menu */
+#header-bottom .main-menu {
+    flex-grow: 1;
+}
+
+/* Header-Bottom - Search Menu */
+#header-bottom .search-menu li {
+   margin-right: 1rem; 
+}    
+
+#header-bottom .search-menu li:last-child {
+    margin-right: 0.5rem;
+}    
+
+#header-bottom .search-menu li:last-child a img {
+    width: 1.5rem;
+}    
+
+
+
 }
 
 
 /******** X-Large - ≥1400px ********/
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     
-}
+} */
