@@ -1,0 +1,43 @@
+/* RESET */
+
+
+/* COMMON */
+
+
+/* HEADER */
+
+
+/* MAIN */
+
+
+/* FOOTER */
+
+
+
+/******************** 
+    MEDIA QUERIES 
+********************/ 
+
+
+/******** Small - ≥576px ********/
+@media screen and (min-width: 576px) {
+
+}
+
+    
+/******** Medium - ≥768px ********/
+@media screen and (min-width: 768px) {
+
+}
+
+    
+/******** Large - ≥992px ********/
+@media screen and (min-width: 992px) {
+
+}
+
+
+/******** X-Large - ≥1400px ********/
+@media screen and (min-width: 1200px) {
+    
+}
