@@ -25,9 +25,12 @@ section {
     margin: 0 auto;
     max-width: 720px;
 }
+.ms_section-grid {
+    padding: 1.5rem 0;
+}
 
 
-/* COMMON - Card */
+/* COMMON - MS Card */
 .ms_card {
     background-color: transparent;
     border: none;
@@ -47,23 +50,21 @@ section {
     font-weight: 600;
 }
 
-/* COMMON - Section Grid */
-.ms_section_grid {
-    padding: 1.5rem 0;
-}
-.ms_section_grid .col .pc-card {
-    /* margin: 0.8rem 0.3rem; */
+
+/* COMMON - PC Card */
+.pc-card {
     padding: 0.8rem 0.3rem;
 }
-.ms_section_grid .col .pc-card img {
+.pc-card img {
     border-radius: 1rem;
 }
-.ms_section_grid .col .pc-card h4 {
+.pc-card .pc-card-title {
     font-size: 1rem;
     margin: 0.5rem 0 2rem;
     line-height: 1.5rem;
     font-weight: 600;
 }
+
 
 /* COMMON - Heading */
 .ms_heading {
@@ -120,6 +121,7 @@ header {
     padding: 0.4rem 0.6rem;
 }
 
+
 /* Header-Top */
 #header-top {
     background: black;
@@ -128,6 +130,7 @@ header {
 #header-top img {
     width: 5rem;
 }
+
 
 /* Header-Bottom */
 #header-bottom {
@@ -143,6 +146,7 @@ header {
     width: 3rem;
 }
 
+
 /* Header-Bottom - Burger Menu */
 #header-bottom .burger-menu a {
     font-size: 1.5rem;
@@ -151,16 +155,19 @@ header {
     border-radius: 0.3rem;
 }
 
+
 /* Header-Bottom - Main Menu / Search Menu */
 #header-bottom .main-menu,
 #header-bottom .search-menu {
     display: none;
 } 
 
+
 /* MAIN */
 main {
     padding-top: 6rem;
 }
+
 
 /* Jumbotron */
 #ms_jumbotron {
@@ -168,29 +175,34 @@ main {
     height: 675px;
 }
 
+
 /* SECTION - Carousel */
 #carousel {
 
 }
+
 
 /* SECTION - Slogan */
 #slogan {
     
 }
 
-/* SECTION - Products */
-#products .col .pc-card {
+
+/* SECTION - Devices */
+#devices .col .pc-card {
     opacity: 0.7;
 }
-#products .col.current .pc-card {
+#devices .col.current .pc-card {
     border-bottom: 2px solid #0072ce;
     opacity: 1;
 }
+
 
 /* SECTION - It takes two */
 #it-takes-two {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
+
 
 /* SECTION - New Releases */
 #new-releases {
@@ -205,6 +217,7 @@ main {
     font-size: 1.5rem;
 }
 
+
 /* SECTION - Explore Playstation */
 #explore-ps .ms_card {
     margin-bottom: 3rem;
@@ -213,6 +226,7 @@ main {
 #explore-ps .ms_card .ms_heading {
     margin-bottom: 0;
 }
+
 
 /* FOOTER */
 
@@ -256,10 +270,12 @@ main {
     margin-left: 0.2rem;
 }        
 
+
 /* Header-Bottom - Burger Menu */
 #header-bottom .burger-menu a {
     display: none;
 }
+
 
 /* Header-Bottom - Main Menu / Search Menu */
 #header-bottom .main-menu,
@@ -267,10 +283,12 @@ main {
     display: inline-block;
 }    
 
+
 /* Header-Bottom - Main Menu */
 #header-bottom .main-menu {
     flex-grow: 1;
 }
+
 
 /* Header-Bottom - Search Menu */
 #header-bottom .search-menu li {
