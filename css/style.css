@@ -74,6 +74,7 @@ footer {
 /* COMMON - PC Card */
 .pc-card {
     padding: 0.8rem 0.3rem;
+    display: block;
 }
 .pc-card img {
     border-radius: 1rem;
