@@ -300,6 +300,7 @@ footer {
 .col .logo-language a.ms_logo {
     display: block;
     margin-bottom: 2.5rem;
+    width: fit-content;
 }
 .col .logo-language a.ms_logo img {
     filter: brightness(0) invert(1);
