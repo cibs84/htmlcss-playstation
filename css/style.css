@@ -52,7 +52,8 @@ section {
     padding: 1.5rem 0;
 }
 .ms_section_grid .col .pc-card {
-    margin: 0.8rem 0.3rem;
+    /* margin: 0.8rem 0.3rem; */
+    padding: 0.8rem 0.3rem;
 }
 .ms_section_grid .col .pc-card img {
     border-radius: 1rem;
@@ -175,6 +176,15 @@ main {
 /* SECTION - Slogan */
 #slogan {
     
+}
+
+/* SECTION - Products */
+#products .col .pc-card {
+    opacity: 0.7;
+}
+#products .col.current .pc-card {
+    border-bottom: 2px solid #0072ce;
+    opacity: 1;
 }
 
 /* SECTION - It takes two */
