@@ -28,12 +28,17 @@ section {
 .ms_section-grid {
     padding: 1.5rem 0;
 }
-
+.ms_section-two-cols {
+    padding: 3rem 0;
+}
 
 /* COMMON - MS Card */
 .ms_card {
     background-color: transparent;
     border: none;
+}
+.ms_card .card-img-top {
+    width: 60%;
 }
 .ms_card .card-title {
     font-size: 2.5rem;
@@ -43,13 +48,13 @@ section {
     padding: 0;
 }
 .ms_card .card-body .card-text {
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
 }
 .ms_card .card-body .btn {
     border-radius: 1.5rem;
     font-weight: 600;
+    color: white;
 }
-
 
 /* COMMON - PC Card */
 .pc-card {
@@ -100,9 +105,6 @@ section {
 }
 .ms_section_hero .ms_card .card-body .btn {
     background-color: #cd3d0f;
-}
-.ms_section_hero .ms_card .card-img-top {
-    width: 60%;
 }
 
 
@@ -188,6 +190,7 @@ main {
     margin-bottom: 0;
 }
 
+
 /* SECTION - Info Playstation 5 */
 #info-ps5 {
     padding-bottom: 0;
@@ -195,6 +198,7 @@ main {
 #info-ps5 .ms_heading {
     margin-bottom: 0;
 }
+
 
 /* SECTION - Devices */
 #devices {
@@ -233,9 +237,34 @@ main {
 #explore-ps .ms_card {
     margin-bottom: 3rem;
 }
-
+#explore-ps .ms_card .card-img-top {
+    width: 100%;
+}
 #explore-ps .ms_card .ms_heading {
     margin-bottom: 0;
+}
+
+
+/* SECTION - Playstation Plus */
+#ps-plus {
+    background-color: #bebcbb;
+}
+#ps-plus .ms_card .card-body .btn {
+    background-color: #d9dadc;
+    border-color: #d9dadc;
+    color: #3066e6;
+}
+
+
+/* SECTION - Playstation Now */
+#ps-now {
+    background-color: #161c3b;
+    color: white;
+}
+#ps-now .ms_card .card-body .btn {
+    background-color: white;
+    border-color: white;
+    color: black;
 }
 
 
