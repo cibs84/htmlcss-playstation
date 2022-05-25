@@ -28,21 +28,21 @@ section {
 
 
 /* COMMON - Card */
-.card {
+.ms_card {
     background-color: transparent;
     border: none;
 }
-.card .card-title {
+.ms_card .card-title {
     font-size: 2.5rem;
     margin: 2rem 0;
 }
-.card .card-body {
+.ms_card .card-body {
     padding: 0;
 }
-.card .card-body .card-text {
+.ms_card .card-body .card-text {
     margin-bottom: 1.5rem;
 }
-.card .card-body .btn {
+.ms_card .card-body .btn {
     border-radius: 1.5rem;
     font-weight: 600;
 }
@@ -51,13 +51,13 @@ section {
 .ms_section_grid {
     padding: 1.5rem 0;
 }
-.ms_section_grid .col .ms_card {
+.ms_section_grid .col .pc-card {
     margin: 0.8rem 0.3rem;
 }
-.ms_section_grid .col .ms_card img {
+.ms_section_grid .col .pc-card img {
     border-radius: 1rem;
 }
-.ms_section_grid .col .ms_card h4 {
+.ms_section_grid .col .pc-card h4 {
     font-size: 1rem;
     margin: 0.5rem 0 2rem;
     line-height: 1.5rem;
@@ -96,10 +96,10 @@ section {
     align-items: flex-end;
     color: white;
 }
-.ms_section_hero .card .card-body .btn {
+.ms_section_hero .ms_card .card-body .btn {
     background-color: #cd3d0f;
 }
-.ms_section_hero .card .card-img-top {
+.ms_section_hero .ms_card .card-img-top {
     width: 60%;
 }
 
@@ -196,11 +196,11 @@ main {
 }
 
 /* SECTION - Explore Playstation */
-#explore-ps .card {
+#explore-ps .ms_card {
     margin-bottom: 3rem;
 }
 
-#explore-ps .card .ms_heading {
+#explore-ps .ms_card .ms_heading {
     margin-bottom: 0;
 }
 
@@ -223,7 +223,7 @@ main {
 @media screen and (min-width: 768px) {
 
 /* SECTION - Explore Playstation */
-#explore-ps .card {
+#explore-ps .ms_card {
     margin-bottom: 1rem;
 }
 
