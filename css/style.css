@@ -18,19 +18,34 @@ a {
     color: inherit;
     text-decoration: none;
 }
-section {
-    padding: 4rem 0;
-}
 .ms_container {
     margin: 0 auto;
     max-width: 720px;
 }
+.ms_container-small {
+    margin: 0 auto;
+    max-width: 576px;
+}
+section,
+footer {
+    padding: 4rem 0;
+}
+
+
+/* COMMON - Sections */
 .ms_section-grid {
     padding: 1.5rem 0;
 }
 .ms_section-two-cols {
     padding: 3rem 0;
 }
+.ms_section-three-cols .col > * {
+    margin: 1.5rem 0;
+}
+.ms_section-three-cols .col:first-child > * {
+    margin-top: 0;
+}
+
 
 /* COMMON - MS Card */
 .ms_card {
@@ -171,16 +186,10 @@ main {
 }
 
 
-/* Jumbotron */
+/* SECTION - Jumbotron */
 #ms_jumbotron {
     background-image: url(../img/jumbo-bg.png);
     height: 675px;
-}
-
-
-/* SECTION - Carousel */
-#carousel {
-
 }
 
 
@@ -233,10 +242,7 @@ main {
 }
 
 
-/* SECTION - Explore Playstation */
-#explore-ps .ms_card {
-    margin-bottom: 3rem;
-}
+/* SECTION - Explore Playstation 4 */
 #explore-ps .ms_card .card-img-top {
     width: 100%;
 }
@@ -268,7 +274,65 @@ main {
 }
 
 
+/* SECTION - Social Media Links */
+#social-links .ms_container-small .container h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+#social-links .ms_container-small .container .row .col img {
+    margin: 1.5rem 0;
+}
+
+
 /* FOOTER */
+footer {
+    background-color: #00439c;
+    color: white;
+    font-size: 0.9rem;
+}
+
+
+/* FOOTER - Logo/Language */
+.col .logo-language {
+    margin-bottom: 3rem;
+}
+.col .logo-language a.ms_logo {
+    display: block;
+    margin-bottom: 2.5rem;
+}
+.col .logo-language a.ms_logo img {
+    filter: brightness(0) invert(1);
+    width: 6rem;
+}
+.col .logo-language a.language img {
+    width: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+/* FOOTER - Footer Menu */
+.col.ms_footer-menu .col ul {
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    line-height: 2rem;
+}
+.col.ms_footer-menu .col:last-child ul {
+}
+
+
+/* FOOTER - Copyright */
+.ms_copyright img {
+    margin-top: 3rem;
+    
+}
+.ms_copyright img {
+    width: 8rem;
+    margin-bottom: 0.5rem;
+}
+.ms_copyright p a {
+    text-decoration: underline;
+}
+
 
 
 
@@ -280,16 +344,24 @@ main {
 /******** Small - ≥576px ********/
 @media screen and (min-width: 576px) {
 
+
 }
 
     
 /******** Medium - ≥768px ********/
 @media screen and (min-width: 768px) {
 
+/* COMMON - Sections */
+.ms_section-three-cols .col > * {
+    margin: 0 0 1rem;
+}
+
+
 /* SECTION - Explore Playstation */
 #explore-ps .ms_card {
     margin-bottom: 1rem;
 }
+
 
 }
 
@@ -342,8 +414,6 @@ main {
 #header-bottom .search-menu li:last-child a img {
     width: 1.5rem;
 }    
-
-
 
 }
 
