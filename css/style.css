@@ -184,11 +184,22 @@ main {
 
 /* SECTION - Slogan */
 #slogan {
-    
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
+/* SECTION - Info Playstation 5 */
+#info-ps5 {
+    padding-bottom: 0;
+}
+#info-ps5 .ms_heading {
+    margin-bottom: 0;
+}
 
 /* SECTION - Devices */
+#devices {
+    padding-top: 0;
+}
 #devices .col .pc-card {
     opacity: 0.7;
 }
