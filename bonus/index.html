@@ -42,7 +42,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     
                     <!-- Left-Menu - LIST -->
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <ul class="navbar-nav me-auto">
                         
                         <!-- Dropdown Link -->
                         <li class="nav-item dropdown">
@@ -160,14 +160,14 @@
                     <ul class="navbar-nav mb-2 mb-md-0">
                         
                         <!-- Dropdown Link -->
-                        <li class="nav-item dropdown me-3">
+                        <li class="nav-item dropdown me-md-3">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             My Playstation
                             </a>
                             <ul class="dropdown-menu pb-4" aria-labelledby="navbarDropdown">
                                 
                                 <!-- Play Menu -->
-                                <li class="play-menu">
+                                <li class="play-menu gap-0 gap-md-4">
                                     <a class="dropdown-item play-item" href="#">
                                         <img src="img/play-menu-ico.png" alt="Playstation Icon">
                                         <span>Playstation 5</span>
@@ -184,16 +184,19 @@
                             </ul>
                         </li>
 
+                        <!-- Divider HR -->
+                        <hr class="mb-4 mt-2 d-md-none">
+
                         <!-- Button Accedi -->
-                        <button type="button" class="btn btn-dark me-3 my-3 my-md-0 px-2 py-1 rounded-pill">Accedi</button>
+                        <button type="button" class="btn btn-dark me-md-3 my-3 my-md-0 px-2 py-1 rounded-pill order-3 order-md-0">Accedi</button>
                         
                         <!-- Search -->
-                        <div class="ms_search row g-3 align-items-center d-md-none">
-                            <div class="col-auto">
+                        <div class="ms_search row g-3 align-items-center">
+                            <div class="col-auto d-md-none">
                               <label for="inputPassword6" class="col-form-label">Search</label>
                             </div>
 
-                            <div class="col-auto">
+                            <div class="col-auto d-md-none">
                               <input type="text" id="inputSearch" class="form-control" aria-describedby="searchHelpInline">
                             </div>
                             
@@ -201,10 +204,7 @@
                                 <img src="img/lens.svg" alt="Lens Icon">
                             </div>
                         </div>
-
-                        <div class="search-icon d-none d-md-block">
-                            <img src="img/lens.svg" alt="Lens Icon">
-                        </div>
+                        <!-- ***** End Search ***** -->
                     </ul>
                     <!-- ***** End Right-Menu ***** -->
                 </div>

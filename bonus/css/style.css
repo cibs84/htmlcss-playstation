@@ -194,6 +194,7 @@ header {
     width: 100%;
     border: none;
     box-shadow: 0 11px 4px 0 rgba(0,0,0,0.3);
+    border-radius: 0;
 }
 
 
@@ -201,7 +202,6 @@ header {
 .navbar-expand-md ul.navbar-nav ul.dropdown-menu li.play-menu {
     display: flex;
     justify-content: center;
-    gap: 1rem;
 }
 .navbar-expand-md ul.navbar-nav ul.dropdown-menu a.play-item {
     display: flex;
@@ -469,6 +469,18 @@ footer a:hover {
 
 
 /* MEDIA QUERY NAVBAR BS6 MOD. */
+@media screen and (max-width: 430px) {
+
+/* NAVBAR BS5 MOD */
+/* Play Menu */
+.navbar-expand-md ul.navbar-nav ul.dropdown-menu li.play-menu {
+    margin: 3.1rem 0;
+}
+.navbar-expand-md ul.navbar-nav ul.dropdown-menu {
+    font-size: 0.9rem;
+}
+}
+
 @media screen and (max-width: 768px) {
 
 /* NAVBAR BS5 MOD */
@@ -480,9 +492,10 @@ footer a:hover {
 .navbar-expand-md ul.navbar-nav ul.dropdown-menu {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -12px;
     border-bottom: 1px solid lightgray;
     box-shadow: none;
+    width: calc(100% + 24px);
 }
 
 }
