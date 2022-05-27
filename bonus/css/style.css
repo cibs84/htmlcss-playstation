@@ -1,0 +1,488 @@
+/* RESET */
+
+
+/* COMMON */
+body {
+    font-family: Arial, sans-serif;
+}
+img {
+    width: 100%;
+    display: inline-block;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+section,
+footer {
+    padding: 4rem 0;
+}
+
+
+/* UTILITIES - Buttons */
+.btn {
+    border: 0.4rem double transparent;
+    transition: all 0.2s;
+}
+.btn:hover {
+    border: 0.4rem double black; 
+}
+.btn.btn-dark:hover,
+.btn.btn-primary:hover {
+    border-color: white; 
+}
+.ms_btn-grey {
+    background-color: #d9dadc;
+    color: #3066e6;
+}
+.ms_btn-grey:hover {
+    border-color: #3066e6;
+    color: #3066e6;
+}
+
+
+/* UTILITIES - Containers */
+.ms_container {
+    margin: 0 auto;
+    max-width: 720px;
+}
+.ms_container-small {
+    margin: 0 auto;
+    max-width: 576px;
+}
+
+
+/* UTILITIES - Sections */
+.ms_section-grid {
+    padding: 1.5rem 0;
+}
+.ms_section-two-cols {
+    padding: 3rem 0;
+}
+.ms_section-three-cols .col > * {
+    margin: 1.5rem 0;
+}
+.ms_section-three-cols .col:first-child > * {
+    margin-top: 0;
+}
+
+
+/* UTILITIES - MS Card */
+.ms_card {
+    background-color: transparent;
+    border: none;
+}
+.ms_card .card-img-top {
+    width: 60%;
+}
+.ms_card .card-title {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+.ms_card .card-body {
+    padding: 0;
+}
+.ms_card .card-body .card-text {
+    margin: 1.5rem 0;
+}
+.ms_card .card-body .btn {
+    border-radius: 1.5rem;
+    font-weight: 600;
+}
+
+
+/* UTILITIES - PC Card */
+.pc-card {
+    padding: 0.8rem 0.3rem;
+    display: block;
+}
+.pc-card img {
+    border-radius: 1rem;
+}
+.pc-card img {
+    border-radius: 1rem;
+}
+.pc-card .pc-card-title {
+    font-size: 1rem;
+    margin: 0.5rem 0 2rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+
+/* UTILITIES - Heading */
+.ms_heading {
+    margin-bottom: 4rem;
+}
+.ms_heading .ms_heading-super-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1980d2;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.ms_heading .ms_heading-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 2.8rem;
+}
+.ms_heading .ms_heading-title sup {
+    font-size: 1.2rem;
+}
+.ms_heading .ms_heading-text {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: #727272;
+}
+
+
+/* UTILITIES - Section Hero */
+.ms_section_hero {
+    padding: 3rem 0;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+}
+.ms_section_hero .ms_card .card-body .btn {
+    background-color: #cd3d0f;
+    color: white;
+}
+
+
+/* HEADER */
+header {
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: 600;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+#header-top,
+#header-bottom {
+    padding: 0.4rem 0.6rem;
+}
+
+
+/* Header-Top */
+#header-top {
+    background: black;
+    text-align: right;
+}
+#header-top img {
+    width: 5rem;
+}
+
+
+/* Header-Bottom - NAVBAR BS5 MOD */
+.navbar-expand-md ul.navbar-nav {
+    align-items: center;
+}
+.navbar-expand-md ul.navbar-nav ul.dropdown-menu {
+    position: fixed;
+    top: 6.5rem;
+    left: 0;
+    width: 100%;
+    border: none;
+    box-shadow: 0 11px 4px 0 rgba(0,0,0,0.3);
+}
+
+
+/* Play Menu */
+.navbar-expand-md ul.navbar-nav ul.dropdown-menu li.play-menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.navbar-expand-md ul.navbar-nav ul.dropdown-menu a.play-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+.navbar-expand-md ul.navbar-nav ul.dropdown-menu a.play-item:hover {
+    box-shadow: 1px 1px 5px #adadad;
+    background-color: unset;
+}
+
+
+/* List Divider */
+.navbar-expand-md ul.navbar-nav ul.dropdown-menu li hr.dropdown-divider {
+    margin: 1rem 0;
+}
+
+
+/* Bottom Play Menu */
+.navbar-expand-md ul.navbar-nav ul.dropdown-menu li.bottom-play-menu {
+    margin-bottom: 0.5rem;
+}
+.navbar-expand-md ul.navbar-nav ul.dropdown-menu li.bottom-play-menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    list-style-type: disc;
+}
+.navbar-expand-md ul.navbar-nav ul.dropdown-menu li.bottom-play-menu ul li::marker {
+    font-size: 1rem;
+    color: #0a58ca;
+}
+.navbar-expand-md ul.navbar-nav ul.dropdown-menu li.bottom-play-menu ul li a.dropdown-item {
+    padding: 0.25rem 0;
+}
+.navbar-expand-md ul.navbar-nav ul.dropdown-menu li.bottom-play-menu ul li a.dropdown-item:hover {
+    color: #0a58ca;
+    background-color: inherit;
+}
+
+
+/* Right-Menu - LIST */
+.navbar-expand-md ul.navbar-nav .ms_search .search-icon {
+    width: 45px;
+}
+.navbar-expand-md ul.navbar-nav .search-icon {
+    width: 30px;
+}
+/* ----- End - NAVBAR BS5 MOD ----- */
+
+
+/* Header-Bottom - Burger Menu */
+#header-bottom .burger-menu a {
+    font-size: 1.5rem;
+    padding: 0.3rem 1rem;
+    border: 1px solid lightgrey;
+    border-radius: 0.3rem;
+}
+
+
+/* Header-Bottom - Main Menu / Search Menu */
+#header-bottom .main-menu,
+#header-bottom .search-menu {
+    display: none;
+} 
+
+
+/* MAIN */
+main {
+    padding-top: 6rem;
+}
+
+
+/* SECTION - Jumbotron */
+#ms_jumbotron {
+    background-image: url(../img/jumbo-bg.png);
+    background-position-y: top;
+    height: 675px;
+}
+
+
+/* SECTION - Carousel */
+#carousel .col:first-child .pc-card img {
+    border: 0.2rem #147dd2 solid;
+    padding: 0.2rem;
+}
+#carousel .col .pc-card img {
+    transition: all ease-out 0.4s;
+}
+#carousel .col .pc-card:hover img {
+    transform: translateY(-1rem);
+}
+
+
+/* SECTION - Slogan */
+#slogan {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+/* SECTION - Info Playstation 5 */
+#info-ps5 {
+    padding-bottom: 0;
+}
+#info-ps5 .ms_heading {
+    margin-bottom: 0;
+}
+
+
+/* SECTION - Devices */
+#devices {
+    padding-top: 0;
+}
+#devices .col .pc-card {
+    opacity: 0.7;
+}
+#devices .col .pc-card:hover {
+    border-bottom: 2px solid #0072ce;
+    opacity: 1;
+}
+#devices .col.current .pc-card {
+    border-bottom: 2px solid #0072ce;
+    opacity: 1;
+}
+
+
+/* SECTION - It takes two */
+#it-takes-two {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+
+/* SECTION - New Releases */
+#new-releases {
+    background-color: #1f1f1f;
+    color: white;
+}
+#new-releases h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#new-releases h3 {
+    font-size: 1.5rem;
+}
+
+
+/* SECTION - Explore Playstation 4 */
+#explore-ps .ms_card .card-img-top {
+    width: 100%;
+}
+#explore-ps .ms_card .ms_heading {
+    margin-bottom: 0;
+}
+
+
+/* SECTION - Playstation Plus */
+#ps-plus {
+    background-color: #bebcbb;
+}
+
+
+/* SECTION - Playstation Now */
+#ps-now {
+    background-color: #161c3b;
+    color: white;
+}
+
+
+/* SECTION - Social Media Links */
+#social-links .ms_container-small .container h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+#social-links .ms_container-small .container .row .col img {
+    margin: 1.5rem 0;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #00439c;
+    color: white;
+    font-size: 0.9rem;
+}
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* FOOTER - Logo/Language */
+.col .logo-language {
+    margin-bottom: 3rem;
+}
+.col .logo-language a.ms_logo {
+    display: block;
+    margin-bottom: 2.5rem;
+    width: fit-content;
+}
+.col .logo-language a.ms_logo img {
+    width: 6rem;
+}
+.col .logo-language a.language img {
+    width: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+/* FOOTER - Footer Menu */
+.col.ms_footer-menu .col ul {
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    line-height: 2rem;
+}
+
+
+/* FOOTER - Copyright */
+.ms_copyright img {
+    margin-top: 3rem;
+    
+}
+.ms_copyright img {
+    width: 8rem;
+    margin-bottom: 0.5rem;
+}
+.ms_copyright p a {
+    text-decoration: underline;
+}
+
+
+/******************** 
+    MEDIA QUERIES 
+********************/ 
+
+
+/******** Small - ≥576px ********/
+@media screen and (min-width: 576px) {
+
+
+}
+
+    
+/******** Medium - ≥768px ********/
+@media screen and (min-width: 768px) {
+
+/* COMMON - Sections */
+.ms_section-three-cols .col > * {
+    margin: 0 0 1rem;
+}
+
+
+/* SECTION - Explore Playstation */
+#explore-ps .ms_card {
+    margin-bottom: 1rem;
+}
+}
+
+    
+/******** Large - ≥992px ********/
+@media screen and (min-width: 992px) {
+
+}
+
+
+/* MEDIA QUERY NAVBAR BS6 MOD. */
+@media screen and (max-width: 768px) {
+
+/* NAVBAR BS5 MOD */
+.navbar-expand-md ul.navbar-nav {
+    align-items: stretch;
+}
+
+
+.navbar-expand-md ul.navbar-nav ul.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-bottom: 1px solid lightgray;
+    box-shadow: none;
+}
+
+}
